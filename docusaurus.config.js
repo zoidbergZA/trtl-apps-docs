@@ -1,11 +1,11 @@
 module.exports = {
   title: 'TRTL Apps',
   tagline: 'Power up your app or game with TurtleCoin',
-  url: 'https://trtlapps.com',
-  baseUrl: '/',
+  url: 'https://zoidbergza.github.io',
+  baseUrl: '/trtl-apps-docs/',
   favicon: 'img/favicon.ico',
-  organizationName: 'TurtleCoin',
-  projectName: 'TRTL Apps docs',
+  organizationName: 'zoidbergZA',
+  projectName: 'trtl-apps-docs',
   themeConfig: {
     disableDarkMode: true,
     navbar: {
