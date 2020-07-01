@@ -18,7 +18,7 @@ module.exports = {
         {
           type: 'link',
           label: 'API reference',
-          href: 'https://trtlapps.io/docs/openapi/'
+          href: 'http://trtlapps.com/openapi/'
         },
         {
           type: 'doc',
