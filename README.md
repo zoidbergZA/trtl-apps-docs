@@ -26,6 +26,8 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
+Github actions are configured to automatically deploy to Github pages on merge/push to the `master` branch.
+
 #### Bash
 ```
 $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
