@@ -6,8 +6,8 @@ sidebar_label: Overview
 
 ## Creating Apps
 
-todo
+todo.
 
 ## Using the Dashboard
 
-todo
+todo.
