@@ -2,7 +2,7 @@ module.exports = {
   title: 'TRTL Apps',
   tagline: 'Power up your app or game with TurtleCoin',
   url: 'https://zoidbergza.github.io',
-  baseUrl: '/trtl-apps-docs/',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'zoidbergZA',
   projectName: 'trtl-apps-docs',
