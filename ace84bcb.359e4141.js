@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{156:function(o){o.exports=JSON.parse('{"allTagsPath":"/trtl-apps-docs/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/trtl-apps-docs/blog/tags/facebook"}')}}]);
