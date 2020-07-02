@@ -26,8 +26,16 @@ This command generates static content into the `build` directory and can be serv
 
 ### Deployment
 
+#### Bash
 ```
 $ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
+
+#### Windows
+```
+cmd /C "set "GIT_USER=<GITHUB_USERNAME>" && yarn deploy"
+```
+
+For more details on deployment visit: [https://v2.docusaurus.io/docs/deployment](https://v2.docusaurus.io/docs/deployment)
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
