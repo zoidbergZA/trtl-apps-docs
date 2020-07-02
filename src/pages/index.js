@@ -12,8 +12,8 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        TRTL Apps was designed from the ground up to make it easy for developers
+        to integrate TurtleCoin into their projects.
       </>
     ),
   },
@@ -22,8 +22,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        TRTL Apps lets you focus on your app, and we&apos;ll take care of
+        keeping the service wallet synced, and provide an easy to use <a href="https://trtlapps.com/openapi" target=
+        "_blank">high-level API</a> to interact with the TurtleCoin network.
       </>
     ),
   },
@@ -32,8 +33,9 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Fork the repo on <a href="https://github.com/turtlecoin/trtl-apps" target=
+        "_blank">Github</a> and follow our setup guide for instructions how to
+        host your own instance of the TRTL Apps service for your projects.
       </>
     ),
   },
@@ -68,7 +70,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>

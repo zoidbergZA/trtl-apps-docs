@@ -2,7 +2,7 @@
   "openapi" : "3.0.1",
   "info" : {
     "title" : "TRTL apps",
-    "description" : "This is the API for apps to interact with the TRTL apps service.  You can find out more about TRTL apps at [http://trtlapps.io](http://trtlapps.io).",
+    "description" : "This is the API for apps to interact with the TRTL apps service.  You can find out more about TRTL apps at [http://trtlapps.com](http://trtlapps.com).",
     "version" : "1.0.0"
   },
   "servers" : [ {

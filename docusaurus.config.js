@@ -1,6 +1,6 @@
 module.exports = {
   title: 'TRTL Apps',
-  tagline: 'Power up your app or game with TurtleCoin',
+  tagline: 'Powerup your app or game with TurtleCoin',
   url: 'https://zoidbergza.github.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -36,12 +36,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'API Reference',
+              href: 'https://trtlapps.com/openapi',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'SDKs',
+              to: 'docs/apps/integrations',
             },
           ],
         },
@@ -49,26 +49,22 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.com/invite/ubFVGH6',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/trtlapps',
             },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: 'blog',
+            // },
             {
               label: 'GitHub',
               href: 'https://github.com/turtlecoin/trtl-apps',
