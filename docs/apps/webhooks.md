@@ -25,7 +25,7 @@ const hash = 'sha256=' + crypto
 const isValid = hash === requestSignature;
 ```
 
-## Examples
+## Events
 
 Below the different event types are listed along with example payloads. Each event object has a `code` property indicating which event was fired, and a `data` property containing the event data.
 

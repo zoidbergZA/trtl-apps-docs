@@ -11,7 +11,3 @@ If you have updated the firestore indexes it is important to also add the change
 ## Updating firestore security rules
 
 If you have updated the firestore rules it is important to also add the changes to source control. In the firebase console, copy the rules text and overwrite the content of the `firestore.rules` file in the root folder of the project.
-
-## Updating OpenAPI documentation
-
-Copy the `swagger.json` openAPI spec into the `src/docs/openapi` folder. Deploy to firebase hosting.

@@ -4,6 +4,8 @@ title: Service setup guide
 sidebar_label: Setup guide
 ---
 
+Fork the repo on [Github](https://github.com/turtlecoin/trtl-apps) to get started.
+
 ## Create firebase project
 
 Go to the [Firebase console](https://console.firebase.google.com) and create a new project.
@@ -124,6 +126,4 @@ Send a GET request to the bootstrap URL passing in the email address of the user
 
 `curl --location --request GET 'BOOTSTRAP_URL?admin=ADMIN_EMAIL_ADDRESS'`
 
-If the service bootstrapped succesfully, it will send an OK response.
-
-# Development
+If the service bootstrapped succesfully, it will send an OK response. see the [Admin](service/admin.md) section for information on service admin functionality.

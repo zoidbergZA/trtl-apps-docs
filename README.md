@@ -24,6 +24,10 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+### Updating the OpenAPI spec
+
+Copy the updated `swagger.json` openAPI spec into the `static/openapi` folder.
+
 ### Deployment
 
 Github actions are configured to automatically deploy to Github pages on merge/push to the `master` branch.
