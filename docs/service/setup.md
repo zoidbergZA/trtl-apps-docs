@@ -67,7 +67,7 @@ Deploy your app for a specific environment:
 ### Secure the endpoints
 
 In the GCP menu, navigate to `Security -> Identity-Aware Proxy`. Turn on the `IAP` toggle for the App Engine resource.
-Select the app engine resource and click `ADD MEMBER` on the right-hand menu and add the firebase default service account email address. Give the new member the `IAP-secured Web App User` role. Members added here will have access to call the app engine API enpoints.
+Select the app engine resource and click `ADD MEMBER` on the right-hand menu and add the firebase default service account email address(can be found in the firebase console `Settings -> Service accounts`). Give the new member the `IAP-secured Web App User` role. Members added here will have access to call the app engine API enpoints.
 
 ## Setup the firebase environment
 
