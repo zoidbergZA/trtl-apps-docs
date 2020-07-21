@@ -71,9 +71,11 @@ Select the app engine resource and click `ADD MEMBER` on the right-hand menu and
 
 ## Setup the firebase environment
 
-Sign in to firebase using the CLI: `firebase login`
+Download the firebase project service account key file in the firebase console: `Settings -> Project settings -> Service Accounts` and select `Generate new private key`. Rename the file to `gcp_account_key.json`. Upload this json file to the project's storage bucket in the root directory.
 
-Download the project service account key file in the firebase console: `Settings -> Project settings -> Service Accounts` and select `Generate new private key`. Rename the file to `gcp_account_key.json`. Upload this json file to the project's storage bucket in the root directory.
+Run the following commands in the project root directory.
+
+Sign in to firebase using the CLI: `firebase login`
 
 Set your service master password in the environment variables: `firebase functions:config:set serviceadmin.password="YOUR ADMIN PASSWORD"`
 Pick a strong password and keep it safely backed up, this is the password used to encrypt the service wallet file.
@@ -126,4 +128,4 @@ Send a GET request to the bootstrap URL passing in the email address of the user
 
 `curl --location --request GET 'BOOTSTRAP_URL?admin=ADMIN_EMAIL_ADDRESS'`
 
-If the service bootstrapped succesfully, it will send an OK response. see the [Admin](service/admin.md) section for information on service admin functionality.
+If the service bootstrapped succesfully, it will send an OK response. see the [Admin](service/admin.md) section for information on service admin functionality. If you are already signed in to the frontend, you may have to sign out and back in for the auth token to update with the new admin privilages.
