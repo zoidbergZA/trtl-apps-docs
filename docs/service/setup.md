@@ -120,7 +120,7 @@ For a single command, you can also use the -P flag: `firebase deploy -P developm
 
 In the firebase console, navigate to the Authentication section and enable the email/password sign-in method. Create a new user account with your email address, we will give this user service admin rights in a later step.
 
-Open *functions* tab, copy the URL of the bootstrap function.
+Open *functions* tab, copy the URL of the `serviceAdmin-bootstrap` function.
 
 Send a GET request to the bootstrap URL passing in the email address of the user you created earlier as an 'admin' query parameter. Example cURL request:
 
