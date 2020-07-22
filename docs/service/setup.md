@@ -129,3 +129,37 @@ Send a GET request to the bootstrap URL passing in the email address of the user
 `curl --location --request GET 'BOOTSTRAP_URL?admin=ADMIN_EMAIL_ADDRESS'`
 
 If the service bootstrapped succesfully, it will send an OK response. see the [Admin](service/admin.md) section for information on service admin functionality. If you are already signed in to the frontend, you may have to sign out and back in for the auth token to update with the new admin privilages.
+
+## CI/CD
+
+The project uses Github actions to automatically build and deploy on pushes to the `master` and `development` and branches. Set the following github secrets in `settings -> secrets` needed for the actions to run:
+
+### Firebase
+
+key: `FIREBASE_TOKEN`
+
+value: `YOUR_FIREBASE_TOKEN` (run `firebase login:ci` in the project folder to get your token)
+
+### App Engine (development)
+
+name: `GCP_SA_KEY_DEV`
+
+value: `ENCODED_SERVICE_ACCOUNT_KEY` (see instructions below for how to get this key)
+
+name: `GAE_PROJECT_ID_DEV`
+
+value: `APP_ENGINE_PROJECT_ID`
+
+### App Engine (production)
+
+name: `GCP_SA_KEY_PROD`
+
+value: `ENCODED_SERVICE_ACCOUNT_KEY` (see instructions below for how to get this key)
+
+name: `GAE_PROJECT_ID_PROD`
+
+value: `APP_ENGINE_PROJECT_ID`
+
+#### Getting the ENCODED_SERVICE_ACCOUNT_KEY
+
+Get the service account key which will be used for authentication. This key should be [created](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) using JSON, encoded as a Base64 string (eg. cat my_key.json | base64 on macOS). On windows you can use: `certutil -encode my_key.json encoded_key.json` to generate a Base64 encoded file.
