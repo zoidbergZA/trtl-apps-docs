@@ -758,19 +758,6 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/PreparedWithdrawal"
-                },
-                "example" : {
-                  "id" : "601wK8qJjXQ3r5PBM16B",
-                  "appId" : "Qp7EwLQlLWDpspZT5IUE",
-                  "accountId" : "2eSGgHTvWSZQyd0SSH83",
-                  "amount" : 420,
-                  "fees" : {
-                    "txFee" : 1000,
-                    "nodeFee" : 10,
-                    "serviceFee" : 0
-                  },
-                  "address" : "TRTLv32bGBP2cfM3SdijU4TTYnCPoR33g5eTas6n9HamBvu8ozc9BZHWza5j7cmBFSgh4dmmGRongfoEEzcvuAEF8dLxixsS7he",
-                  "timestamp" : 1573675761789
                 }
               }
             }
@@ -835,28 +822,6 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/Withdrawal"
-                },
-                "example" : {
-                  "id" : "btpNERIyBgmg3gPFE5OA",
-                  "paymentId" : "304044f69ca418575661375f0bc90b829f1fd12c2c181454d6dcabdcb81b683f",
-                  "status" : "pending",
-                  "blockHeight" : 0,
-                  "appId" : "J3irXkH26gE4pZHYyWWW",
-                  "accountId" : "8RgwiWmgiYKQlUHWGaTW",
-                  "amount" : 420,
-                  "fees" : {
-                    "txFee" : 1000,
-                    "nodeFee" : 10,
-                    "serviceFee" : 0
-                  },
-                  "address" : "TRTLv32bGBP2cfM3SdijU4TTYnCPoR33g5eTas6n9HamBvu8ozc9BZHWza5j7cmBFSgh4dmmGRongfoEEzcvuAEF8dLxixsS7he",
-                  "requestAtBlock" : 2015846,
-                  "timestamp" : 1573675761789,
-                  "lastUpdate" : 1573675761789,
-                  "failed" : false,
-                  "userDebited" : true,
-                  "retries" : 0,
-                  "serviceChargeId" : "p0LWRu3RRBKADIdOHpMD"
                 }
               }
             }
@@ -974,28 +939,6 @@
               "application/json" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/Withdrawal"
-                },
-                "example" : {
-                  "id" : "btpNERIyBgmg3gPFE5OA",
-                  "paymentId" : "304044f69ca418575661375f0bc90b829f1fd12c2c181454d6dcabdcb81b683f",
-                  "status" : "pending",
-                  "blockHeight" : 0,
-                  "appId" : "J3irXkH26gE4pZHYyWWW",
-                  "accountId" : "8RgwiWmgiYKQlUHWGaTW",
-                  "amount" : 420,
-                  "fees" : {
-                    "txFee" : 1000,
-                    "nodeFee" : 10,
-                    "serviceFee" : 0
-                  },
-                  "address" : "TRTLv32bGBP2cfM3SdijU4TTYnCPoR33g5eTas6n9HamBvu8ozc9BZHWza5j7cmBFSgh4dmmGRongfoEEzcvuAEF8dLxixsS7he",
-                  "requestAtBlock" : 2015846,
-                  "timestamp" : 1573675761789,
-                  "lastUpdate" : 1573675761789,
-                  "failed" : false,
-                  "userDebited" : true,
-                  "retries" : 0,
-                  "serviceChargeId" : "p0LWRu3RRBKADIdOHpMD"
                 }
               }
             }
@@ -1199,11 +1142,11 @@
           "amount" : {
             "type" : "integer"
           },
-          "fee" : {
-            "type" : "integer"
+          "fees" : {
+            "$ref" : "#/components/schemas/Fees"
           },
-          "serviceCharge" : {
-            "type" : "integer"
+          "txHash" : {
+            "type" : "string"
           }
         }
       },
@@ -1237,7 +1180,7 @@
           "serviceChargeId" : {
             "type" : "string"
           },
-          "userDebited" : {
+          "accountDebited" : {
             "type" : "boolean"
           },
           "address" : {
